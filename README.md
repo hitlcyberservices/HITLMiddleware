@@ -1,6 +1,4 @@
 
-
-````markdown
 # 🚦 HITL – Human-in-the-Loop AI Middleware
 
 > 🧠 Add fail-safes to your AI agents in 60 seconds — no more silent failures or silent breakdowns.
@@ -53,6 +51,8 @@ Autonomous agents are powerful, but brittle. They hallucinate, get stuck, or fai
 ## 🧪 Quickstart (Coming Soon)
 
 ### Install the SDK
+````markdown
+
 
 ```bash
 pip install hitl
