@@ -1,135 +1,143 @@
+
+
+````markdown
 # 🚦 HITL – Human-in-the-Loop AI Middleware
 
-**Enable truly reliable AI agents. HITL provides a real-time human escalation safety net via SMS, Slack, or Voice, ensuring your autonomous workflows never fail silently.**
+> 🧠 Add fail-safes to your AI agents in 60 seconds — no more silent failures or silent breakdowns.
 
-> ⚠️ **PRE-LAUNCH EARLY ACCESS: Project Under Active Development**
-> We're building HITL with our community. By joining early, you help shape the roadmap and secure priority access.
+**HITL (Human-in-the-Loop)** is an SDK & CLI middleware that gives your AI agents the power to **escalate to a real human in real-time** via SMS, Slack, or Voice. Instead of hallucinating or breaking, your agent pauses, alerts a human, gets help — and continues the job.
 
------
+---
 
-## 🚀 What is HITL?
+## ⚠️ PRE-LAUNCH: EARLY ACCESS
 
-HITL (Human-in-the-Loop) Middleware is an SDK/CLI tool designed to add a critical "human safety net" to your AI agents (e.g., LangChain, AutoGen, OpenAI).
+We're building HITL *with* the dev community. Join now to shape the roadmap and get early access to our Pilot tier with bonus perks.
 
-Whenever your AI encounters uncertainty, low confidence, failure, or needs a critical decision, it can:
-✅ **Escalate** to a human in real-time.
-✅ **Wait** for input via SMS, Slack, or Voice.
-✅ **Continue** its workflow seamlessly with that human input.
+---
 
-This creates an "AI ↔ Human ↔ AI" feedback loop for robust, trustworthy autonomous systems.
+## 🚀 What Is HITL?
 
------
+HITL (Human-in-the-Loop) brings **real-time human input** to any AI workflow.
+
+🔁 **When your agent hits a wall** — low confidence, unhandled error, or decision fork — it can:
+
+- ✅ **Escalate** to a human in real time  
+- ✅ **Wait** for input (SMS, Slack, or Voice)  
+- ✅ **Continue** its task using that input  
+
+> Think: **AI → Human → AI** — the missing loop for reliable autonomy.
+
+---
 
 ## 🧐 Why HITL?
 
-AI agents are powerful but often brittle. They can hallucinate, get stuck, break workflows, and erode trust.
+Autonomous agents are powerful, but brittle. They hallucinate, get stuck, or fail silently.
 
-**HITL fixes this.** It ensures your AI pauses, gets necessary human input, and resumes, making your AI deployments:
+**HITL is your AI safety net:**
 
-  * **Reliable:** Prevent silent failures and unexpected errors.
-  * **Safe:** Introduce human oversight for critical decision points.
-  * **Trusted:** Build confidence in your autonomous systems.
+- 🧠 **Smarter:** Let agents pause & ask for help when unsure  
+- 🛡️ **Safer:** Bring human oversight to critical decision points  
+- ✅ **Reliable:** Keep workflows moving, even when AI fails  
+- 💬 **Cross-Channel:** Escalate via Slack, SMS, or Voice  
 
------
+---
 
-## 👥 Who This Is For
+## 👥 Who Should Use HITL
 
-  * **AI Developers:** Building autonomous agents with LangChain, AutoGen, OpenAI, or custom frameworks.
-  * **Teams & Startups:** Deploying AI into critical, regulated, or customer-facing workflows.
-  * **Consultants:** Seeking deployable human guardrails for client AI solutions.
+- 👨‍💻 **AI Developers:** Using LangChain, OpenAI, or AutoGen  
+- 🚀 **Startups/Teams:** Running customer-facing or regulated workflows  
+- 🧩 **Consultants:** Adding real-time guardrails to client deployments  
 
------
+---
 
-## 💻 Quick Start (In Development)
+## 🧪 Quickstart (Coming Soon)
 
-The core Python SDK for Slack/SMS escalation is under active development. Voice integration and CLI dashboard features are planned.
-
-Install the SDK (when available):
+### Install the SDK
 
 ```bash
 pip install hitl
-```
+````
 
-Trigger an escalation from your AI agent:
+### Escalate from your AI agent
 
 ```python
 from hitl import escalate
 
 response = escalate(
-    message="The AI needs human input to choose between option A or B.",
-    context={"agent_id": "xyz123", "critical": True}
+    message="The AI needs human input to choose between A or B.",
+    context={"agent_id": "agent_007", "critical": True}
 )
 ```
 
-**Check Usage & History (Future):**
-Access your plan, usage, and escalation logs from anywhere:
+### CLI & Cross-Channel Commands (Planned)
 
-  * **CLI:** `hitl dash`, `hitl hist`
-  * **SMS:** Text `"dash"` or `"hist"`
-  * **Slack:** DM `"dash"` or `"hist"`
-  * **Voice:** Info read aloud during escalation
+* `hitl dash` → View usage, tier, and upgrade options
+* `hitl hist` → View escalation history
+* SMS: Reply `"dash"` or `"hist"`
+* Slack: DM `"dash"` or `"hist"`
+* Voice: Listen to usage, history, and escalate live
 
------
+---
 
-## 💸 Early Access & Pilot Pre-Orders
+## 💸 Early Access — Preorder the Pilot Plan
 
-HITL is currently in pre-launch. We're offering **one prepaid access tier** to early supporters:
+### 🎟️ **Pilot Tier – \$149 One-Time**
 
-| Plan      | Status         | Price           | Escalations | Channels    | Voice | Notes                                 |
-| --------- | -------------- | --------------- | ----------- | ----------- | ----- | ------------------------------------- |
-| **Pilot** | **Pre-order now** | **$149 one-time** | 150 total   | Slack + SMS | ✅    | Includes early Voice access + beta badge. No overage billing – re-up manually. |
-| Trial     | Coming after Beta | Free (5 total)  | Limited beta access |       |       |                                       |
-| Starter   | Coming post-launch | $49/mo          |             |             |       |                                       |
-| Pro       | Coming post-launch | $149/mo         |             |             |       |                                       |
-| Team      | Coming post-launch | $499/mo         |             |             |       |                                       |
+| Plan      | Price              | Escalations | Channels    | Voice | Notes                                           |
+| --------- | ------------------ | ----------- | ----------- | ----- | ----------------------------------------------- |
+| **Pilot** | **\$149 one-time** | 150 total   | Slack + SMS | ✅     | Early Voice access, Beta badge, no overage fees |
 
-> **Pilot users will get priority migration and perks when other plans launch.**
+> 🔐 [**Pre-order Pilot on Stripe →**](https://buy.stripe.com/aFa3cw3n7eBY5Omh2Idwc00)
 
------
+**Coming Soon:**
 
-## 📈 Roadmap & Current Status
+* Trial: Free (5 total escalations)
+* Starter: \$49/mo
+* Pro: \$149/mo
+* Team: \$499/mo
 
-We're actively building the core components:
+---
 
-| Feature                   | Status          |
-| ------------------------- | --------------- |
-| Python SDK for Slack/SMS  | 🛠️ In development |
-| CLI dashboard (`hitl dash`)| 🛠️ In development |
-| Voice escalation (Twilio) | 🛠️ Planned      |
-| Cross-channel history     | 🛠️ Planned      |
-| Stripe payment & upgrades | ✅ Implemented  |
-| Team routing & admin dashboard | 🛠️ Planned   |
+## 🗺️ Roadmap
 
-**By joining Early Access or pre-ordering Pilot:**
+| Feature                         | Status          |
+| ------------------------------- | --------------- |
+| ✅ Stripe payments               | ✅ Live          |
+| 🛠️ Python SDK (Slack/SMS)      | 🛠️ In progress |
+| 🛠️ CLI dashboard (`hitl dash`) | 🛠️ In progress |
+| 🔜 Voice escalation (Twilio)    | 🔜 Planned      |
+| 🔜 Escalation history logs      | 🔜 Planned      |
+| 🔜 Team routing/dashboard       | 🔜 Planned      |
 
-  * You’ll help shape the roadmap.
-  * You’ll be first in line when Beta launches.
-  * Pilot buyers get **priority onboarding** when features go live.
+---
 
------
+## 🤝 Join Us
 
-## 🤝 Join Our Community & Get Access
+1. 📩 **Just want updates?**
+   👉 [Join Early Access Waitlist](https://form.typeform.com/to/lGGTZRf6)
 
-**Ready to get started or learn more? Choose your path:**
+2. 🔥 **Want to support development & get early access?**
+   👉 [Pre-order the Pilot Plan](https://buy.stripe.com/aFa3cw3n7eBY5Omh2Idwc00)
 
-1.  **Want updates, not ready to pre-order?**
-    📩 [**Join the Early Access Waitlist**](https://form.typeform.com/to/lGGTZRf6)
-2.  **Want to support development & get priority Beta access?**
-    🔗 [**Pre-order Pilot for $149**](https://buy.stripe.com/aFa3cw3n7eBY5Omh2Idwc00)
+---
 
------
+### 💬 Connect
 
-### Connect with Us
+* 💬 [Join our Discord](https://discord.gg/De9MhRXM)
+* 🐦 [Follow on X/Twitter](https://x.com/hitlmiddleware)
+* 📩 Email: [hitl@cyberservices.com](mailto:hitl@cyberservices.com)
 
-  * 💬 **Discord Community:** [https://discord.gg/De9MhRXM](https://discord.gg/De9MhRXM) (for discussion & updates)
-  * 🐦 **Follow on X:** [https://x.com/hitlmiddleware](https://x.com/hitlmiddleware) (progress updates)
-  * 📩 **Email Us:** [hitl@cyberservices.com](mailto:hitl@cyberservices.com) (for ideas & direct questions)
+---
 
------
+## ⚠️ Legal Note
 
-### Important Disclaimer
+> **Important:** HITL is in early development. No usable product is immediately available. Your support helps fund buildout, shape the roadmap, and reserve your place in early beta access.
 
-**⚠️ Nothing is live yet.** HITL is in **pre-launch Early Access.** No immediate usable product will be delivered today. Your participation helps shape the product and funds development.
+```
 
------
+---
+
+
+
+
 
