@@ -5,7 +5,6 @@
 > 🛠️ **⚠️ PRE-LAUNCH EARLY ACCESS**
 > HITL is still in **active development**.
 >
-> * Nothing is live in production yet
 > * We’re gathering **early supporters** & feedback
 > * Pre-ordering Pilot helps fund development & gives you **priority access** when we launch
 
