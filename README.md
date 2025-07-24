@@ -1,3 +1,101 @@
+> Real-time human escalation via SMS, Slack, and Voice for AI agents that get stuck, confused, or need approval.
+
+🚧 **This project is under active development.**  
+We’re onboarding early adopters now via **prepaid access to the $149 Pilot plan** — if you want to be one of the first 100 to build on HITL, claim your spot below.
+
+---
+
+## 🚀 What Is HITL?
+
+HITL (Human-in-the-Loop) is a lightweight middleware layer for AI agents.
+
+Whenever your AI agent (e.g. LangChain, AutoGen, OpenAI) encounters uncertainty, failure, or needs a human decision, it can:
+
+✅ Escalate to a human in real-time  
+✅ Wait for a human reply via SMS, Slack, or voice  
+✅ Continue its workflow with that input  
+
+It’s an "AI ↔ Human ↔ AI" feedback loop for autonomy with safety.
+
+---
+
+## 👥 Who This Is For
+
+- **AI Developers** building autonomous agents with LangChain, AutoGen, or OpenAI
+- **Teams** deploying AI into critical or regulated workflows
+- **Startups** looking to bridge the gap between LLM automation and human control
+- **Consultants** needing deployable HITL guardrails for clients
+
+---
+
+## 📦 Features (MVP in Development)
+
+| Feature                        | Status         |
+|-------------------------------|----------------|
+| Python SDK                    | ✅ Live         |
+| SMS + Slack Escalations       | ✅ Live         |
+| Voice Escalation (Twilio)     | 🛠️ In progress  |
+| CLI Dashboard (`hitl dash`)   | ✅ Live         |
+| CLI History (`hitl hist`)     | ✅ Live         |
+| Stripe Checkout (Pilot Only)  | ✅ Live         |
+| Cross-Channel Usage Access    | ✅ CLI/SMS/Slack|
+| Webhook & Zapier Support      | 🧪 Beta         |
+
+---
+
+## 💻 Quick Start
+
+Install the SDK:
+```bash
+pip install hitl
+````
+
+Trigger an escalation from your AI agent:
+
+```python
+from hitl import escalate
+
+response = escalate(
+    message="The AI needs human input to choose between option A or B.",
+    context={"agent_id": "xyz123", "critical": True}
+)
+```
+
+---
+
+## 📊 Check Usage & History
+
+From **anywhere** you can check your plan, usage, and escalation logs:
+
+| Channel | Command or Keyword        |
+| ------- | ------------------------- |
+| CLI     | `hitl dash`, `hitl hist`  |
+| SMS     | Text `"dash"` or `"hist"` |
+| Slack   | DM `"dash"` or `"hist"`   |
+| Voice   | Info is read aloud        |
+
+---
+
+## 💸 Early Access Pricing (Pilot Plan Only)
+
+We are currently offering **one prepaid access tier** during development:
+
+| Plan      | Price              | Escalations | Channels    | Voice | Notes                                    |
+| --------- | ------------------ | ----------- | ----------- | ----- | ---------------------------------------- |
+| **Pilot** | **\$149 one-time** | 150 total   | Slack + SMS | ✅     | Includes early Voice access + beta badge |
+
+> 🔐 All other plans (Starter, Pro, Team) are **future roadmap** — Pilot users will get priority migration and perks.
+
+> 🔁 No overage billing — just re-up manually after 150.
+
+👉 [🎟️ Claim Pilot Access – \$149 One-Time](https://buy.stripe.com/aFa3cw3n7eBY5Omh2Idwc00)
+
+---
+
+
+
+
+
 # 🚦 HITL – Human-in-the-Loop AI Middleware
 
 **When your AI agents get stuck, HITL will escalate to you (or your team) in real time via Slack, SMS, or Voice—so workflows never fail silently.**
